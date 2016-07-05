@@ -21,7 +21,8 @@
 </head>
 <body ng-app="MyApp" class="container">
 	<div class="container" ng-init="name=[ 'Hulk', 'Batman', 'Superman', 'Thor', 'Wonderwomen', 'Black Widow' ]"></div>
-	<h2><u>Ascending Order:</u></h2><h3 ng-repeat="nm in name | orderBy:nm">{{nm}}</h3>
-	<h2><u>Descending Order:</u></h2><h3 ng-repeat="nm in name | orderBy:nm:true">{{nm}}</h3>
+	<h2><u>Initial Order:</u></h2><h3 ng-repeat="nm in name">{{nm}}</h3><br><br>
+	<h2><u>Ascending Order:</u></h2><h3 ng-repeat="nm in name | orderBy:nm">{{nm}}</h3><br><br>
+	<h2><u>Descending Order:</u></h2><h3 ng-repeat="nm in name | orderBy:nm:true">{{nm}}</h3><br><br>
 </body>
 </html>
